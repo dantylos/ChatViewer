@@ -117,7 +117,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.chat_viewer/com.example.chat_viewer.HelloApplication</mainClass>
+                            <mainClass>com.example.chat_viewer/com.HelloApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
