@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42b77b62-ae71-4708-a3fd-3b223155fbd0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chatViewer/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chatViewer/model/ChatMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chatViewer/view/MainView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatViewer/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatViewer/MainApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +114,7 @@
       <updated>1747393380493</updated>
       <workItem from="1747393381525" duration="1443000" />
       <workItem from="1747941716734" duration="6275000" />
-      <workItem from="1747995187383" duration="1908000" />
+      <workItem from="1747995187383" duration="3657000" />
     </task>
     <servers />
   </component>
