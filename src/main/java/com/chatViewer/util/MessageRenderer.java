@@ -12,7 +12,7 @@ import java.util.Objects;
 /* Renders ChatMessage objects into styled JavaFX TextFlow nodes, replacing emoticon strings with images and applying formatting rules. */
 public class MessageRenderer {
 
-    private String previousNickname = "";
+    public String previousNickname = "";
 
     private final Image happyEmoticon;
     private final Image sadEmoticon;
