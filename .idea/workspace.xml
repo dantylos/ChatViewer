@@ -5,14 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42b77b62-ae71-4708-a3fd-3b223155fbd0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chatViewer/util/ErrorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/chatViewer/MessageRendererTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chatviewer/util/ValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/chatviewer/util/MessageParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/chatviewer/util/MessageRendererTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatViewer/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatViewer/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatViewer/util/MessageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatViewer/util/MessageRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatViewer/view/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatViewer/view/MainView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/chatViewer/ChatViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/chatViewer/MessageParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/emoticons/happy-smile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/happy-smile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/emoticons/sad-smile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/sad-smile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/fxml/ChatView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/ChatView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatViewer/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatviewer/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatViewer/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatviewer/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatViewer/model/ChatMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatviewer/model/ChatMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatViewer/util/ErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatviewer/util/ErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatViewer/util/MessageParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatviewer/util/MessageParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatViewer/util/MessageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatviewer/util/MessageRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatViewer/view/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatviewer/view/MainView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/chatViewer/ChatMessageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/chatviewer/model/ChatMessageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/chatViewer/MessageParserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/chatViewer/MessageRendererTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaFXApplication" />
         <option value="Class" />
+        <option value="JavaFXApplication" />
       </list>
     </option>
   </component>
@@ -50,6 +60,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.MainApp.executor": "Run",
+    "JUnit.ChatMessageTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "Daniil",
@@ -66,10 +78,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vivobook\Downloads\PROGRAMING\java_projects\chat_viewer\src\main" />
       <recent name="C:\Users\Vivobook\Downloads\PROGRAMING\java_projects\chat_viewer\src\main\java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.chatviewer.util" />
+      <recent name="com.chatviewer.model" />
       <recent name="com.chatViewer" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.chatviewer.util" />
     </key>
   </component>
   <component name="RunManager">
@@ -124,7 +142,10 @@
       <workItem from="1747393381525" duration="1443000" />
       <workItem from="1747941716734" duration="6275000" />
       <workItem from="1747995187383" duration="3657000" />
-      <workItem from="1748109383115" duration="1619000" />
+      <workItem from="1748109383115" duration="2080000" />
+      <workItem from="1748173546230" duration="648000" />
+      <workItem from="1748266926077" duration="1455000" />
+      <workItem from="1748701390500" duration="4821000" />
     </task>
     <servers />
   </component>
