@@ -1,6 +1,6 @@
-package com.chatViewer;
+package com.chatviewer.util;
 
-import com.chatViewer.model.ChatMessage;
+import com.chatviewer.model.ChatMessage;
 import javafx.embed.swing.JFXPanel;
 import javafx.scene.Node;
 import javafx.scene.text.TextFlow;
@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Unit tests for MessageRenderer.
+ * Unit tests for the MessageRenderer.
  */
 class MessageRendererTest {
 
@@ -23,22 +23,22 @@ class MessageRendererTest {
     @Test
     void testRenderMessageWithEmoticons() {
         MessageRenderer renderer = new MessageRenderer();
-        ChatMessage msg = new ChatMessage("2025-05-25 12:00", "Alice", "Hello :) How are you :(");
+        ChatMessage msg = new ChatMessage("2025-05-31T12:00:00", "Alice", "Hello :) How are you :(");
 
         Node node = renderer.renderMessage(msg);
         assertTrue(node instanceof TextFlow);
         TextFlow flow = (TextFlow) node;
 
-        boolean hasHappy = flow.getChildren().stream().anyMatch(n -> n instanceof javafx.scene.image.ImageView);
-        assertTrue(hasHappy, "Should contain an emoticon image");
+        boolean hasEmoticon = flow.getChildren().stream().anyMatch(n -> n instanceof javafx.scene.image.ImageView);
+        assertTrue(hasEmoticon, "Should contain at least one emoticon image");
     }
 
     @Test
     void testRenderMessageNicknameEllipsis() {
         MessageRenderer renderer = new MessageRenderer();
 
-        ChatMessage msg1 = new ChatMessage("2025-05-25 12:00", "Alice", "First");
-        ChatMessage msg2 = new ChatMessage("2025-05-25 12:01", "Alice", "Second");
+        ChatMessage msg1 = new ChatMessage("2025-05-31T12:00:00", "Alice", "First");
+        ChatMessage msg2 = new ChatMessage("2025-05-31T12:01:00", "Alice", "Second");
 
         renderer.renderMessage(msg1); // sets previousNickname
         Node node = renderer.renderMessage(msg2);
