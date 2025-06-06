@@ -5,9 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.time.LocalDateTime;
 
-/**
- * JUnit tests for Message parsing and validation.
- */
+// JUnit tests for Message parsing and validation.
 public class MessageTest {
 
     @Test

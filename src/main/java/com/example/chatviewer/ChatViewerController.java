@@ -18,9 +18,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * Controller for the Chat Viewer UI. Handles loading and displaying messages.
- */
+// Controller for the Chat Viewer UI. Handles loading and displaying messages.
 public class ChatViewerController {
 
     @FXML
@@ -37,16 +35,13 @@ public class ChatViewerController {
 
     private File lastDirectory;
 
-    // Emoticon images
     private Image smileImage;
     private Image sadImage;
 
     // Pattern to find emoticons :) and :(
     private static final Pattern EMOTICON_PATTERN = Pattern.compile("(:\\)|:\\()");
 
-    /**
-     * Called after the FXML is loaded. Initializes resources.
-     */
+    // Called after the FXML is loaded. Initializes resources.
     @FXML
     public void initialize() {
         // Try to load emoticon images from resources, use fallback if not found
@@ -70,9 +65,7 @@ public class ChatViewerController {
         }
     }
 
-    /**
-     * Handler for the Load File button. Opens a FileChooser and displays messages.
-     */
+    // Handler for the Load File button. Opens a FileChooser and displays messages.
     @FXML
     private void handleLoad(ActionEvent event) {
         FileChooser fileChooser = new FileChooser();
@@ -96,7 +89,7 @@ public class ChatViewerController {
                 displayMessages(messages);
             } catch (Exception e) {
                 showAlert("Could not read or parse file:\n" + e.getMessage());
-                e.printStackTrace(); // For debugging
+                e.printStackTrace(); // Debugging
             }
         }
     }
@@ -118,7 +111,6 @@ public class ChatViewerController {
 
         // Parse messages in groups of 3 lines separated by empty lines
         for (int i = 0; i < lines.size(); ) {
-            // Skip empty lines
             while (i < lines.size() && lines.get(i).trim().isEmpty()) {
                 i++;
             }
@@ -136,7 +128,7 @@ public class ChatViewerController {
                 Message message = new Message(timeLine, nameLine, messageLine);
                 messages.add(message);
 
-                i += 3; // Move to next message
+                i += 3;
             } catch (Exception e) {
                 throw new IllegalArgumentException("Error parsing message at line " + (i + 1) + ": " + e.getMessage());
             }
@@ -180,15 +172,12 @@ public class ChatViewerController {
             String content = msg.getContent();
             processContentWithEmoticons(content);
 
-            // Newline after each message
             Text newline = new Text("\n");
             textFlow.getChildren().add(newline);
         }
     }
 
-    /**
-     * Processes message content, replacing emoticons with images and applying bold style.
-     */
+    // Processes message content, replacing emoticons with images and applying bold style.
     private void processContentWithEmoticons(String content) {
         Matcher matcher = EMOTICON_PATTERN.matcher(content);
         int lastIndex = 0;
@@ -218,9 +207,7 @@ public class ChatViewerController {
         }
     }
 
-    /**
-     * Adds an emoticon to the TextFlow (image or text fallback).
-     */
+    // Adds an emoticon to the TextFlow (image or text fallback).
     private void addEmoticon(String emoticon) {
         if (emoticon.equals(":)") && smileImage != null) {
             ImageView imageView = new ImageView(smileImage);
@@ -244,7 +231,6 @@ public class ChatViewerController {
 
     /**
      * Shows an alert dialog with a given title and message.
-     *
      * @param message the alert message
      */
     private void showAlert(String message) {

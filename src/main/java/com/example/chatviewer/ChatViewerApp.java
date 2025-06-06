@@ -5,9 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-/**
- * Main JavaFX application class for the Chat Viewer.
- */
+// Main JavaFX application class for the Chat Viewer.
 public class ChatViewerApp extends Application {
 
     @Override

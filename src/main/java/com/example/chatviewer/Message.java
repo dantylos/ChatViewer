@@ -1,8 +1,6 @@
 package com.example.chatviewer;
 
-/**
- * Represents a single chat message with timestamp, nickname, and content.
- */
+// Represents a single chat message with timestamp, nickname, and content.
 public class Message {
 
     private final String timestamp;
@@ -17,7 +15,7 @@ public class Message {
      * @throws IllegalArgumentException if format is invalid
      */
     public Message(String timestampLine, String nicknameLine, String contentLine) {
-        // Parse timestamp (accept any non-empty string after "Time:")
+        // Parse timestamp
         if (!timestampLine.startsWith("Time:")) {
             throw new IllegalArgumentException("Invalid timestamp line format: " + timestampLine);
         }
@@ -27,7 +25,7 @@ public class Message {
         }
         this.timestamp = tsValue;
 
-        // Parse nickname (accept any non-empty string after "Name:")
+        // Parse nickname
         if (!nicknameLine.startsWith("Name:")) {
             throw new IllegalArgumentException("Invalid nickname line format: " + nicknameLine);
         }
@@ -37,16 +35,14 @@ public class Message {
         }
         this.nickname = nickValue;
 
-        // Parse content (accept any string after "Message:", including empty)
+        // Parse content
         if (!contentLine.startsWith("Message:")) {
             throw new IllegalArgumentException("Invalid content line format: " + contentLine);
         }
-        this.content = contentLine.substring(8); // Don't trim - preserve spaces
+        this.content = contentLine.substring(8);
     }
 
-    /**
-     * Alternative constructor for direct values (for testing)
-     */
+    // Alternative constructor for direct values (testing part)
     public Message(String timestamp, String nickname, String content, boolean direct) {
         if (direct) {
             this.timestamp = timestamp;
