@@ -3,7 +3,7 @@ A JavaFX-based desktop application for viewing and displaying chat messages from
 
 ## Features
 * __File Loading:__ Load chat messages from .msg format files
-* __Emoticon Support:__ Automatic conversion of text emoticons (:) and :() to images
+* __Emoticon Support:__ Automatic conversion of text emoticons :) and :( to images
 * __Smart Display:__ Consecutive messages from the same user show "..." instead of repeating the nickname
 * __Formatted Text:__ Messages displayed with timestamps, colored nicknames, and bold content
 * __Scroll Support:__ Scrollable message display for long conversations
