@@ -17,8 +17,7 @@ A JavaFX-based desktop application for viewing and displaying chat messages from
 ## Configuration and Execution
 1. Install the source code or clone the git repository;
 2. In the project root, launch the terminal or command prompt;
-3. Build and run using command:
-`mvn clean javafx:run`
+3. Build and run using command: `mvn clean javafx:run`
 4. **Click "Load File"** to open a file chooser
 5. **Select** a `.msg` **file** containing chat messages
 6. **View the formatted messages** in the main window
@@ -30,8 +29,7 @@ A JavaFX-based desktop application for viewing and displaying chat messages from
 * Provide scrolling for long conversations
 
 ## Testing
-Run the unit tests with:
-`mvn test`
+Run the unit tests with: `mvn test` command
 ### The test suite includes:
 * Message parsing validation
 * Timestamp format verification
