@@ -28,7 +28,7 @@ A JavaFX-based desktop application for viewing and displaying chat messages from
 * Render message content in bold
 * Convert `:)` and `:(` to emoticon images (if available)
 * Provide scrolling for long conversations
-* 
+
 ## Testing
 Run the unit tests with:
 `mvn test`
