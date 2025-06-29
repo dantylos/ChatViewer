@@ -1,5 +1,5 @@
 # Chat Viewer
-A JavaFX-based desktop application for viewing and displaying chat messages from .msg files with support for emoticons and formatted text display.
+The JavaFX-based desktop application for viewing and displaying chat messages from .msg files with support for emoticons and formatted text display.
 
 ## Features
 * __File Loading:__ Load chat messages from .msg format files
